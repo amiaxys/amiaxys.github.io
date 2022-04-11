@@ -41,6 +41,7 @@ a:hover, a:active {
 }
 
 .bar-link {
+    font-size: 1.2em;
     color: var(--text);
 }
 
