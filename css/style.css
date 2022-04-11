@@ -1,0 +1,11 @@
+@font-face{
+	font-family: "Philosopher";
+	src: url('https://fonts.googleapis.com/css?family=Philosopher');
+}
+
+body{
+	font-family: "Philosopher";
+	font-size: 12pt;
+	color: lightseagreen;
+	background-color: midnightblue;
+}
