@@ -40,6 +40,14 @@ a:hover, a:active {
     text-align: right;
 }
 
+.bar-link {
+    color: var(--base);
+}
+
+.bar-link:hover, .bar-link:active {
+    color: var(--text);
+}
+
 .content {
     margin: auto;
     box-sizing: border-box;
