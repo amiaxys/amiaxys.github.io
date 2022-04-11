@@ -32,13 +32,16 @@ a:hover, a:active {
 }
 
 .bar {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: flex-start;
+    align-items: center;
     box-sizing: border-box;
     width: 100%;
     height: auto;
-    padding: 2vw 5vw;
+    padding: 1vw 5vw;
     background-color: var(--a2);
     font-size: 1.2em;
-    text-align: right;
 }
 
 .bar-link {
@@ -51,10 +54,14 @@ a:hover, a:active {
 
 .bubble {
     display: flex;
+    flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
     width: 100px;
     height: 100px;
+}
+
+.bubble-select {
     border-radius: 50%;
     background-color: var(--a1);
     animation-name: grow;
