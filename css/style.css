@@ -53,11 +53,11 @@ a:hover, a:active {
 }
 
 .bubble {
+    flex: 0 0 100px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    width: 100px;
     height: 100px;
 }
 
