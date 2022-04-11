@@ -50,6 +50,7 @@ a:hover, a:active {
 }
 
 .bubble {
+    display: inline-block;
     border-radius: 50%;
     background-color: var(--a1);
     animation-name: grow;
