@@ -71,12 +71,12 @@ a:hover, a:active {
 
 @keyframes grow {
     from {
-        width: 0px;
+        flex: 0 0 0px;
         height: 0px;
     }
 
     to {
-        width: 100px;
+        flex: 0 0 100px;
         height: 100px;
     }
 }
