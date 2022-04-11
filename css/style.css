@@ -1,11 +1,15 @@
-@font-face{
+@font-face {
 	font-family: "Philosopher";
 	src: url('https://fonts.googleapis.com/css?family=Philosopher');
 }
 
-body{
+body {
 	font-family: "Philosopher";
-	font-size: 12pt;
+	font-size: 12px;
 	color: lightblue;
 	background-color: midnightblue;
+}
+
+.content {
+    padding: 15%;
 }
