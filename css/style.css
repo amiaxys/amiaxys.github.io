@@ -50,7 +50,11 @@ a:hover, a:active {
 }
 
 .bubble {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     background-color: var(--a1);
     animation-name: grow;
@@ -65,8 +69,8 @@ a:hover, a:active {
     }
 
     to {
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
     }
 }
 
