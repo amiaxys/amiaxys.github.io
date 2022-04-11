@@ -39,7 +39,7 @@ a:hover, a:active {
     box-sizing: border-box;
     width: 100%;
     height: auto;
-    padding: 1vw 5vw;
+    padding: 0px 5vw;
     background-color: var(--a2);
     font-size: 1.2em;
 }
