@@ -63,7 +63,7 @@ a:hover, a:active {
 
 .bubble-select {
     border-radius: 50%;
-    background-color: var(--a1);
+    background-color: var(--base);
     animation-name: grow;
     animation-duration: 2s;
     animation-iteration-count: 1;
