@@ -22,11 +22,11 @@ body {
 }
 
 a {
-    color: var(--a2);
+    color: var(--a1);
 }
 
 a:hover, a:active {
-    color: var(--a1);
+    color: var(--a2);
 }
 
 .content {
