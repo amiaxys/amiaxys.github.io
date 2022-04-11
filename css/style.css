@@ -50,6 +50,7 @@ a:hover, a:active {
 }
 
 .bubble {
+    border-radius: 50%;
     background-color: var(--a1);
     animation-name: grow;
     animation-duration: 1s;
@@ -60,13 +61,11 @@ a:hover, a:active {
     from {
         width: 0px;
         height: 0px;
-        border-radius: 50%;
     }
 
     to {
         width: 150px;
         height: 150px;
-        border-radius: 50%;
     }
 }
 
