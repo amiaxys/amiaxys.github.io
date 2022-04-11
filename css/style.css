@@ -1,10 +1,10 @@
 @font-face {
-	font-family: "Philosopher";
-	src: url('https://fonts.googleapis.com/css?family=Philosopher');
+	font-family: "Jaldi";
+	src: url('https://fonts.googleapis.com/css?family=Jaldi');
 }
 
 body {
-	font-family: "Philosopher";
+	font-family: "Jaldi";
 	font-size: 12px;
 	color: azure;
 	background-color: midnightblue;
