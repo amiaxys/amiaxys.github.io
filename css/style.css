@@ -65,13 +65,14 @@ a:hover, a:active {
     border-radius: 50%;
     background-color: var(--base);
     animation-name: grow;
-    animation-duration: 0.8s;
+    animation-duration: 0.5s;
     animation-iteration-count: 1;
 }
 
 @keyframes grow {
     from {
         flex: 0 0 0px;
+        max-width: 0px;
         height: 0px;
     }
 
