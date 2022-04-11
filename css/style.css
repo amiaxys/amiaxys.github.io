@@ -65,7 +65,7 @@ a:hover, a:active {
     border-radius: 50%;
     background-color: var(--a1);
     animation-name: grow;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-iteration-count: 1;
 }
 
