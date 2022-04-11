@@ -41,11 +41,11 @@ a:hover, a:active {
 }
 
 .bar-link {
-    color: var(--base);
+    color: var(--text);
 }
 
 .bar-link:hover, .bar-link:active {
-    color: var(--text);
+    color: var(--base);
 }
 
 .content {
