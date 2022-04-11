@@ -30,6 +30,8 @@ a:hover, a:active {
 }
 
 .bar {
+    box-sizing: border-box;
+    width: 100%;
     padding: 5wv;
     background-color: var(--a2);
     text-align: right;
