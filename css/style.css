@@ -3,15 +3,23 @@
 	src: url('https://fonts.googleapis.com/css?family=Jaldi');
 }
 
+h1 {
+    color: #ADC3E8;
+}
+
 body {
 	font-family: "Jaldi";
 	font-size: 16px;
-	color: azure;
-	background-color: midnightblue;
+	color: #DEE7F6;
+	background-color: #0C264D;
 }
 
 .content {
     margin: auto;
     max-width: 800px;
     padding: 5vw;
+}
+
+.link {
+    color: #5B88D2;
 }
