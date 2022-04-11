@@ -3,27 +3,34 @@
 	src: url('https://fonts.googleapis.com/css?family=Jaldi');
 }
 
-h1 {
-    color: #ADC3E8;
+:root {
+    --base: #0C264D;
+    --text: #DEE7F6;
+    --a1: #ADC3E8;
+    --a2: #5B88D2;
+}
+
+h2 {
+    color: var(--a1);
 }
 
 body {
 	font-family: "Jaldi";
 	font-size: 18px;
-	color: #DEE7F6;
-	background-color: #0C264D;
+	color: var(--text);
+	background-color: var(--base);
 }
 
 a {
-    color: inherit;
+    color: var(--a2);
+}
+
+a:hover, a:active {
+    color: var(--a1);
 }
 
 .content {
     margin: auto;
     max-width: 800px;
     padding: 5vw;
-}
-
-.link {
-    color: #5B88D2;
 }
