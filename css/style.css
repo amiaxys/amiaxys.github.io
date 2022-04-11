@@ -37,11 +37,11 @@ a:hover, a:active {
     height: auto;
     padding: 2vw 5vw;
     background-color: var(--a2);
+    font-size: 1.2em;
     text-align: right;
 }
 
 .bar-link {
-    font-size: 1.2em;
     color: var(--text);
 }
 
