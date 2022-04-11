@@ -29,8 +29,15 @@ a:hover, a:active {
     color: var(--a2);
 }
 
+.bar {
+    padding: 5wv;
+    background-color: var(--a2);
+    text-align: right;
+}
+
 .content {
     margin: auto;
+    box-sizing: border-box;
     max-width: 800px;
     padding: 5vw;
 }
