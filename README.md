@@ -1,2 +1,2 @@
 # amiaxys.github.io
-A professional website/ePortfolio
+A personal website to hold an ePortfolio + resume
