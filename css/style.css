@@ -49,6 +49,27 @@ a:hover, a:active {
     color: var(--base);
 }
 
+.bubble {
+    background-color: var(--a1);
+    animation-name: grow;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes grow {
+    from {
+        width: 0px;
+        height: 0px;
+        border-radius: 50%;
+    }
+
+    to {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+}
+
 .content {
     margin: auto;
     box-sizing: border-box;
