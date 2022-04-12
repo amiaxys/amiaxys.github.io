@@ -28,9 +28,6 @@ body {
 
 a {
     color: var(--accent-1);
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
 }
 
 a:hover, a:active {
@@ -54,6 +51,9 @@ a:hover, a:active {
 .bar-link {
     margin-top: calc(0px - (var(--bubble-displace) / 2));
     color: var(--text);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 .bar-link:hover, .bar-link:active {
