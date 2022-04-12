@@ -10,7 +10,7 @@
     --accent-2: #5B88D2;
 
     --bubble-size: 100px;
-    --bubble-displace: 20px;
+    --bubble-displace: 1vw;
 }
 
 h2 {
@@ -42,14 +42,14 @@ a:hover, a:active {
 
     box-sizing: border-box;
     width: 100%;
-    height: calc(var(--bubble-size) - var(--bubble-displace));
-    padding: 1vw 5vw 0px 5vw;
+    height: var(--bubble-size);
+    padding: var(--bubble-displace) 5vw 0px 5vw;
     background-color: var(--accent-2);
     font-size: 1.2em;
 }
 
 .bar-link {
-    margin-top: calc(0px - var(--bubble-displace));
+    margin-top: calc(0px - (var(--bubble-displace) / 2));
     color: var(--text);
 }
 
