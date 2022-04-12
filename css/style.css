@@ -68,31 +68,21 @@ a:hover, a:active {
     height: var(--bubble-size);
 }
 
-.bubble-select {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-
-    flex: 0 0 var(--bubble-size);
-    height: var(--bubble-size);
+.select {
     border-radius: 50%;
     background-color: var(--base);
-    animation-name: grow;
+    animation-name: fill;
     animation-duration: 0.8s;
     animation-iteration-count: 1;
 }
 
-@keyframes grow {
+@keyframes fill {
     from {
-        flex: 0 0 0px;
-        max-width: 0px;
-        height: 0px;
+        background-color: linear-gradient(transparent 100%, var(--base) 100%);
     }
 
     to {
-        flex: 0 0 var(--bubble-size);
-        height: var(--bubble-size);
+        background-color: linear-gradient(transparent 0%, var(--base) 0%);
     }
 }
 
