@@ -38,6 +38,7 @@ a:hover, a:active {
     flex-flow: row-reverse wrap;
     justify-content: flex-start;
     align-items: center;
+    
     box-sizing: border-box;
     width: 100%;
     height: calc(var(--bsize) - 20px);
@@ -55,20 +56,22 @@ a:hover, a:active {
 }
 
 .bubble {
-    flex: 0 0 var(--bsize);
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+
+    flex: 0 0 var(--bsize);
     height: var(--bsize);
 }
 
 .bubble-select {
-    flex: 0 0 var(--bsize);
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+
+    flex: 0 0 var(--bsize);
     height: var(--bsize);
     border-radius: 50%;
     background-color: var(--base);
