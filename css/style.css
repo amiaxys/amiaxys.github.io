@@ -70,7 +70,10 @@ a:hover, a:active {
 
 .select {
     border-radius: 50%;
-    background-color: var(--base);
+    background-color: linear-gradient(transparent 50%, var(--base) 50%);
+    background-size: 100% 200%;
+    background-position: 0% 50%;
+
     animation-name: fill;
     animation-duration: 0.8s;
     animation-iteration-count: 1;
@@ -78,11 +81,11 @@ a:hover, a:active {
 
 @keyframes fill {
     from {
-        background-color: linear-gradient(transparent 100%, var(--base) 100%);
+        background-position: 0% 0%;
     }
 
     to {
-        background-color: linear-gradient(transparent 0%, var(--base) 0%);
+        background-position: 0% 50%;
     }
 }
 
