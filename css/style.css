@@ -5,8 +5,8 @@
 
 :root {
     --base: #0C264D;
-    --text: #DEE7F6;
-    --accent-1: #a0bbea; /* #ADC3E8 */
+    --text: #c7e3fa;
+    --accent-1: #74abff; /* #ADC3E8 */
     --accent-2: #4a86e6; /* #5B88D2 */
 
     --bubble-size: 95px;
