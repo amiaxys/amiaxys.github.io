@@ -49,10 +49,8 @@ a:hover, a:active {
 }
 
 .bar-link {
-    margin-top: calc(0px - (var(--bubble-displace) / 2));
     color: var(--text);
     font-weight: bold;
-    text-transform: uppercase;
     text-decoration: none;
 }
 
