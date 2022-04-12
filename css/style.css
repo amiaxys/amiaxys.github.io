@@ -4,8 +4,8 @@
 }
 
 @font-face {
-	font-family: "Assistant";
-	src: url("https://fonts.googleapis.com/css?family=Assistant");
+	font-family: "Jaldi";
+	src: url("https://fonts.googleapis.com/css?family=Jaldi");
 }
 
 :root {
@@ -32,17 +32,17 @@ h2 {
     color: var(--accent-2);
 }
 
+h1, h2 {
+    font-family: "Overpass", sans-serif;
+}
+
 body {
     margin: 0px;
     padding: 0px;
-	font-family: "Overpass", sans-serif;
+    font-family: "Jaldi", sans-serif;
 	font-size: 16px;
 	color: var(--text);
 	background-color: var(--base);
-}
-
-p {
-    font-family: "Assistant", sans-serif;
 }
 
 hr {
@@ -74,6 +74,7 @@ a:hover, a:active {
 
 .bar-link {
     color: var(--text);
+    font-family: "Overpass", sans-serif;
     font-weight: bold;
     text-decoration: none;
 }
