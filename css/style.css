@@ -70,7 +70,7 @@ a:hover, a:active {
 
 .select {
     border-radius: 50%;
-    background-color: linear-gradient(transparent 50%, var(--base) 50%);
+    background: linear-gradient(transparent 50%, var(--base) 50%);
     background-size: 100% 200%;
     background-position: 0% 100%;
 
