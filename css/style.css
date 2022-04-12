@@ -30,6 +30,11 @@ body {
 	background-color: var(--base);
 }
 
+hr {
+    border: 0;
+    border-top: 2px solid var(--accent-1);
+}
+
 a {
     color: var(--accent-1);
 }
