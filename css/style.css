@@ -6,11 +6,15 @@
 :root {
     --base: #0C264D;
     --text: #DEE7F6;
-    --accent-1: #ADC3E8;
-    --accent-2: #5B88D2;
+    --accent-1: #a0bbea; /* #ADC3E8 */
+    --accent-2: #4a86e6; /* #5B88D2 */
 
     --bubble-size: 95px;
     --bubble-displace: 14px;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 h2 {
@@ -40,10 +44,9 @@ a:hover, a:active {
     justify-content: flex-start;
     align-items: center;
 
-    box-sizing: border-box;
     width: 100%;
-    height: var(--bubble-size);
-    padding: var(--bubble-displace) 5vw 0px 5vw;
+    height: calc(var(--bubble-size) - (var(--bubble-displace) * 2));
+    padding: 0px 5vw;
     background-color: var(--accent-2);
     font-size: 1.2em;
 }
@@ -91,7 +94,6 @@ a:hover, a:active {
 
 .content {
     margin: auto;
-    box-sizing: border-box;
     max-width: 800px;
     padding: 2vw 5vw;
 }
