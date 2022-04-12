@@ -44,6 +44,7 @@ a:hover, a:active {
     justify-content: flex-start;
     align-items: center;
 
+    margin-top: var(--bubble-displace);
     width: 100%;
     height: calc(var(--bubble-size) - (var(--bubble-displace) * 2));
     padding: 0px 5vw;
