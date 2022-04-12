@@ -29,6 +29,7 @@ body {
 a {
     color: var(--accent-1);
     font-weight: bold;
+    text-transform: uppercase;
     text-decoration: none;
 }
 
