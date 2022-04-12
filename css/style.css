@@ -62,6 +62,12 @@ a:hover, a:active {
 }
 
 .bubble-select {
+    flex: 0 0 100px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
     border-radius: 50%;
     background-color: var(--base);
     animation-name: grow;
