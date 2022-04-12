@@ -96,9 +96,9 @@ a:hover, a:active {
 
 .select {
     border-radius: 50%;
-    background: linear-gradient(transparent 50%, var(--base) 50%);
+    background: linear-gradient(var(--base) 50%, transparent 50%);
     background-size: 100% 200%;
-    background-position: 0% 100%;
+    background-position: 0% 0%;
 
     animation-name: fill;
     animation-duration: 0.8s;
@@ -107,11 +107,11 @@ a:hover, a:active {
 
 @keyframes fill {
     0% {
-        background-position: 0% 0%;
+        background-position: 0% 100%;
     }
 
     100% {
-        background-position: 0% 100%;
+        background-position: 0% 0%;
     }
 }
 
