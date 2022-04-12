@@ -72,7 +72,7 @@ a:hover, a:active {
     border-radius: 50%;
     background-color: linear-gradient(transparent 50%, var(--base) 50%);
     background-size: 100% 200%;
-    background-position: 0% 50%;
+    background-position: 0% 100%;
 
     animation-name: fill;
     animation-duration: 0.8s;
@@ -85,7 +85,7 @@ a:hover, a:active {
     }
 
     to {
-        background-position: 0% 50%;
+        background-position: 0% 100%;
     }
 }
 
