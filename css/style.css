@@ -122,5 +122,6 @@ a:hover, a:active {
 }
 
 .subtitle {
+    color: var(--accent-1);
     font-size: 0.9em;
 }
