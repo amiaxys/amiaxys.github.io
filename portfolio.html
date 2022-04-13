@@ -30,7 +30,7 @@
 
   <body>
 
-    <div class="bar">
+    <nav class="bar">
 
       <div class="bubble">
         <a class="bar-link" href="index">Home</a>
@@ -44,113 +44,129 @@
         <a class="bar-link" href="portfolio">Portfolio</a>
       </div>
 
-    </div>
+    </nav>
 
     <div class="content">
 
       <h1>Portfolio</h1>
 
       <!-- Artifact 1 -->
-      <p>
-        <h2>Estimated Time Application</h2>
-        This program was created as a stand-alone application 
-        to calculate estimated time for epics in Jira Software 
-        projects and was presented on February 17, 2022.
-      </p>
+      <section>
+        
+        <p>
+          <h2>Estimated Time Application</h2>
+          <span class="subtitle">
+            This program was created as a stand-alone application 
+            to calculate estimated time for epics in Jira Software 
+            projects and was presented on February 17, 2022.
+          </span>
+        </p>
 
-      <p>
-        During my Innovapost work term, it was decided from the 
-        first goal planning meeting that I would be showcasing the 
-        research and knowledge gained during the first month of 
-        work by creating a small program. Calculating the estimated 
-        time for an epic was a useful endeavour that tied all the 
-        topics and that no one had yet created anything for, so the 
-        task was assigned to me.
-      </p>
+        <p>
+          During my Innovapost work term, it was decided from the 
+          first goal planning meeting that I would be showcasing the 
+          research and knowledge gained during the first month of 
+          work by creating a small program. Calculating the estimated 
+          time for an epic was a useful endeavour that tied all the 
+          topics and that no one had yet created anything for, so the 
+          task was assigned to me.
+        </p>
 
-      <p>
-        Working independently as a DevOps engineer co-op student, 
-        I created an application that could be run from command 
-        line using Groovy and the Jira REST API. Using the “GET” 
-        request method from the URLConnection class, I requested 
-        JSON content to parse using JsonSlurper into a map. The map 
-        was then iterated through, and the estimated times for each 
-        story within the epic were added together and sent back to 
-        update the proper field in the parent epic using the “PUT” 
-        method. The final application was presented to the team 
-        during one of the daily stand-up meetings, and no flaws 
-        were picked out.
-      </p>
+        <p>
+          Working independently as a DevOps engineer co-op student, 
+          I created an application that could be run from command 
+          line using Groovy and the Jira REST API. Using the “GET” 
+          request method from the URLConnection class, I requested 
+          JSON content to parse using JsonSlurper into a map. The map 
+          was then iterated through, and the estimated times for each 
+          story within the epic were added together and sent back to 
+          update the proper field in the parent epic using the “PUT” 
+          method. The final application was presented to the team 
+          during one of the daily stand-up meetings, and no flaws 
+          were picked out.
+        </p>
 
-      <p>
-        Through the process of creating the Estimated Time 
-        application, I learned about REST APIs, how to connect to 
-        URLs with an application, the Groovy language and how it 
-        ties to Java. Groovy and Jira Cloud REST API 
-        documentation, sample code in GitHub repositories and 
-        confused forum posters were all helpful in my journey to 
-        complete the estimated time application. I believe if I had 
-        the chance to recreate the artifact, I might remove some 
-        redundant code and clean up the formatting, but overall, it 
-        would not change all that much.
-      </p>
+        <p>
+          Through the process of creating the Estimated Time 
+          application, I learned about REST APIs, how to connect to 
+          URLs with an application, the Groovy language and how it 
+          ties to Java. Groovy and Jira Cloud REST API 
+          documentation, sample code in GitHub repositories and 
+          confused forum posters were all helpful in my journey to 
+          complete the estimated time application. I believe if I had 
+          the chance to recreate the artifact, I might remove some 
+          redundant code and clean up the formatting, but overall, it 
+          would not change all that much.
+        </p>
+
+      </section>
 
       <hr />
 
       <!-- Artifact 2 -->
-      <p>
-        <h2>Jira KPI Report</h2>
-        This KPI report detailing the team’s Jira activities 
-        was generated for the month of January on February 2, 
-        2022.
-      </p>
+      <section>
 
-      <p>
-        Before starting my work as a DevOps engineer, my 
-        understanding of agile approaches to software 
-        development was fairly shallow. At most, I could list 
-        the points on couple slides from my Software Design course 
-        and speak of the one time I implemented Scrum in a group 
-        project. At Innovapost, one of my early goals was to 
-        integrate myself into the agile process that the DevOps 
-        teams had already put into effect and re-introduce myself 
-        to the Scrum framework.
-      </p>
+        <p>
+          <h2>Jira KPI Report</h2>
+          <span class="subtitle">
+            This KPI report detailing the team’s Jira activities 
+            was generated for the month of January on February 2, 
+            2022.
+          </span>
+        </p>
 
-      <p>
-        The agile workflow of the team I was allocated to 
-        relied heavily on Jira Software and the Kanban or Scrum 
-        features that could be applied to each project. Taking 
-        part and facilitating the daily stand-up meetings was 
-        part of the process, but the stories and Kanban board 
-        on the Jira interface gave me a concrete visual display 
-        of my progress in learning agile methodology. The Jira KPI 
-        report was a step beyond that, where a snapshot of the 
-        team’s advancement was caught and preserved.
-      </p>
+        <p>
+          Before starting my work as a DevOps engineer, my 
+          understanding of agile approaches to software 
+          development was fairly shallow. At most, I could list 
+          the points on couple slides from my Software Design course 
+          and speak of the one time I implemented Scrum in a group 
+          project. At Innovapost, one of my early goals was to 
+          integrate myself into the agile process that the DevOps 
+          teams had already put into effect and re-introduce myself 
+          to the Scrum framework.
+        </p>
 
-      <p>
-        The report itself was created as a page in the team 
-        Confluence space, using JQL search filters and 
-        Confluence macros such as pie charts and graphs. The 
-        format followed all the KPI reports prior to January, 
-        so there was little challenge or trouble there. Each 
-        section listed a different statistic to note and review 
-        at the end of the month, and outliers were taken into 
-        consideration to be adjusted the next month.
-      </p>
+        <p>
+          The agile workflow of the team I was allocated to 
+          relied heavily on Jira Software and the Kanban or Scrum 
+          features that could be applied to each project. Taking 
+          part and facilitating the daily stand-up meetings was 
+          part of the process, but the stories and Kanban board 
+          on the Jira interface gave me a concrete visual display 
+          of my progress in learning agile methodology. The Jira KPI 
+          report was a step beyond that, where a snapshot of the 
+          team’s advancement was caught and preserved.
+        </p>
 
-      <p>
-        By constructing the Jira KPI report, I was able to 
-        familiarize myself with Jira advanced search and Confluence 
-        macros, as well as understand the data useful to the team 
-        for planning and review purposes. 
-      </p>
+        <p>
+          The report itself was created as a page in the team 
+          Confluence space, using JQL search filters and 
+          Confluence macros such as pie charts and graphs. The 
+          format followed all the KPI reports prior to January, 
+          so there was little challenge or trouble there. Each 
+          section listed a different statistic to note and review 
+          at the end of the month, and outliers were taken into 
+          consideration to be adjusted the next month.
+        </p>
+
+        <p>
+          By constructing the Jira KPI report, I was able to 
+          familiarize myself with Jira advanced search and Confluence 
+          macros, as well as understand the data useful to the team 
+          for planning and review purposes. 
+        </p>
+
+      </section>
 
       <hr />
 
       <!-- Artifact 3 -->
-      <p>Artifact 3.</p>
+      <section>
+        
+        <p>Artifact 3.</p>
+
+      </section>
 
     </div>
 

@@ -120,3 +120,7 @@ a:hover, a:active {
     max-width: 850px;
     padding: 2vw 5vw;
 }
+
+.subtitle {
+    font-size: 0.9em;
+}
