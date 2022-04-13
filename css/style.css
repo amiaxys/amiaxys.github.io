@@ -48,8 +48,8 @@ body {
 }
 
 hr {
-    margin-top: 0.2em;
-    margin-bottom: 0.2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
     border: 0;
     border-top: 2px solid var(--accent-1);
 }
