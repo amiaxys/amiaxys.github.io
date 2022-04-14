@@ -51,7 +51,7 @@ hr {
     margin-top: 2em;
     margin-bottom: 2em;
     border: 0;
-    border-top: 2px solid var(--accent-1);
+    border-top: 2px solid var(--text);
 }
 
 a {
