@@ -55,11 +55,9 @@ body {
 	background-color: var(--color-base);
 }
 
-hr {
-    margin-top: 2em;
-    margin-bottom: 2em;
-    border: 0;
-    border-top: 2px solid var(--color-text);
+pre {
+    margin: 0.5em 0;
+    font-size: 0.8em;
 }
 
 a {
@@ -68,6 +66,13 @@ a {
 
 a:hover, a:active {
     color: var(--color-accent-2);
+}
+
+hr {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border: 0;
+    border-top: 2px solid var(--color-text);
 }
 
 .bar {
@@ -109,21 +114,7 @@ a:hover, a:active {
     background: linear-gradient(var(--color-base) 50%, transparent 50%);
     background-size: 100% 200%;
     background-position: 0% 0%;
-
-    /* animation-name: fill;
-    animation-duration: 0.8s;
-    animation-iteration-count: 1; */
 }
-
-/* @keyframes fill {
-    0% {
-        background-position: 0% 100%;
-    }
-
-    100% {
-        background-position: 0% 0%;
-    }
-} */
 
 .content {
     margin: auto;
@@ -157,12 +148,24 @@ a:hover, a:active {
 
 .active, .accordion:hover {
     background-color: var(--color-accent-2);
+    color: var(--color-text);
 }
 
 .active {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    color: var(--color-text);
+}
+
+.accordion:after {
+    margin-top: 4px;
+    margin-left: 5px;
+    content: "\02795";
+    font-size: 0.8em;
+    float: right;
+}
+  
+.active:after {
+    content: "\2796";
 }
 
 .accordion-body {
@@ -174,6 +177,7 @@ a:hover, a:active {
     color: var(--color-base);
 
     max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    overflow-x: auto;
+    overflow-y: hidden;
+    transition: max-height 0.4s ease-out;
 }

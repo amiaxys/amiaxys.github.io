@@ -67,80 +67,80 @@
         <button type="button" class="accordion">EstimatedTime.Groovy</button>
         <div class="accordion-body">
           <pre>import groovy.json.JsonSlurper
-            import groovy.json.JsonOutput
+import groovy.json.JsonOutput
+
+String project = "" // change to project key
+String auth = "" // change to authentication string
+String url = "" // change to root/domain string
+
+String inUrl = "${url}search?jql=project=${project}"
+def inConnection = inUrl.toURL().openConnection()
+inConnection.addRequestProperty("Authorization", "Basic ${auth}")
+inConnection.addRequestProperty("Accept", "application/json")
+inConnection.addRequestProperty("Content-Type", "application/json")
+
+inConnection.setRequestMethod("GET")
+inConnection.doInput = true
+inConnection.doOutput = false
+inConnection.connect()
+
+JsonSlurper json = new JsonSlurper()
+def projMap = json.parseText(inConnection.content.text)
+
+def epicMap = [:]
+
+for (issue in projMap.issues) {
+    def epic = issue.fields.customfield // change customfield to Epic Link field ID
+    def effort = issue.fields.customfield // change customfield to Effort field ID
+    print issue.key + "\t" + effort + "\t" + epic
             
-            String project = "" // change to project key
-            String auth = "" // change to authentication string
-            String url = "" // change to root/domain string
+    if (epic != null && effort != null) {
+        if (epicMap.containsKey(epic) == false) {
+            epicMap[epic] = effort
+        } else {
+            epicMap[epic] += effort
+        }
+    }
+    println "\t" + epicMap
+}
             
-            String inUrl = "${url}search?jql=project=${project}"
-            def inConnection = inUrl.toURL().openConnection()
-            inConnection.addRequestProperty("Authorization", "Basic ${auth}")
-            inConnection.addRequestProperty("Accept", "application/json")
-            inConnection.addRequestProperty("Content-Type", "application/json")
-            
-            inConnection.setRequestMethod("GET")
-            inConnection.doInput = true
-            inConnection.doOutput = false
-            inConnection.connect()
-            
-            JsonSlurper json = new JsonSlurper()
-            def projMap = json.parseText(inConnection.content.text)
-            
-            def epicMap = [:]
-            
-            for (issue in projMap.issues) {
-                def epic = issue.fields.customfield // change customfield to Epic Link field ID
-                def effort = issue.fields.customfield // change customfield to Effort field ID
-                print issue.key + "\t" + effort + "\t" + epic
-            
-                if (epic != null && effort != null) {
-                    if (epicMap.containsKey(epic) == false) {
-                        epicMap[epic] = effort
-                    } else {
-                        epicMap[epic] += effort
-                    }
-                }
-                println "\t" + epicMap
-            }
-            
-            epicMap.each{
-                epic, time ->
+epicMap.each{
+    epic, time ->
+
+    String outUrl = "${url}issue/${epic}"
+    def outConnection = outUrl.toURL().openConnection()
+    outConnection.addRequestProperty("Authorization", "Basic ${auth}")
+    outConnection.addRequestProperty("Accept", "application/json")
+    outConnection.addRequestProperty("Content-Type", "application/json")
               
-                String outUrl = "${url}issue/${epic}"
-                def outConnection = outUrl.toURL().openConnection()
-                outConnection.addRequestProperty("Authorization", "Basic ${auth}")
-                outConnection.addRequestProperty("Accept", "application/json")
-                outConnection.addRequestProperty("Content-Type", "application/json")
+    outConnection.setRequestMethod("PUT")
+    outConnection.doInput = true
+    outConnection.doOutput = true
               
-                outConnection.setRequestMethod("PUT")
-                outConnection.doInput = true
-                outConnection.doOutput = true
+    String update = """
+    {
+      "fields" : {
+        "customfield" : ${time}
+      }
+    }""" // change customfield to Estimated Time field ID
               
-                String update = """
-                {
-                  "fields" : {
-                    "customfield" : ${time}
-                  }
-                }""" // change customfield to Estimated Time field ID
+    outConnection.outputStream.withWriter{
+        t.write(update)
+        it.flush()
+    }
               
-                outConnection.outputStream.withWriter{
-                    it.write(update)
-                    it.flush()
-                }
+    outConnection.connect()
               
-                outConnection.connect()
-              
-                try {
-                    outConnection.content.text
-                } catch (IOException e) {
-                    try {
-                        ((HttpURLConnection)outConnection).errorStream.text
-                    } catch (Exception ignored) {
-                        throw e
-                    }
-                }
-            }</pre>
+    try {
+        outConnection.content.text
+    } catch (IOException e) {
+        try {
+            ((HttpURLConnection)outConnection).errorStream.text
+        } catch (Exception ignored) {
+            throw e
+        }
+    }
+}</pre>
         </div>
 
         <p>
