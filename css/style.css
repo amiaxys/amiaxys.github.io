@@ -68,6 +68,11 @@ a:hover, a:active {
     color: var(--color-accent-2);
 }
 
+iframe {
+    max-width: 100%;
+    height: auto;
+}
+
 hr {
     margin-top: 2em;
     margin-bottom: 2em;
@@ -159,7 +164,7 @@ hr {
 .accordion:after {
     content: "\2b";
     margin-top: 5px;
-    margin-left: 5px;
+    margin-left: 6px;
     font: var(--fa-font-solid);
     font-size: 0.9em;
     text-rendering: auto;
