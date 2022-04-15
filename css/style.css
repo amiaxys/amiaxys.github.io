@@ -166,6 +166,7 @@ a:hover, a:active {
 }
 
 .accordion-body {
+    width: 100%;
     padding: var(--accordion-padding);
     border-bottom-left-radius: var(--accordion-border-radius);
     border-bottom-right-radius: var(--accordion-border-radius);
