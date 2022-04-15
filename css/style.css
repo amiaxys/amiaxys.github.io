@@ -9,13 +9,16 @@
 }
 
 :root {
-    --base: #0C264D;
-    --text: #d7ebfb;
-    --accent-1: #93baf5; /* #ADC3E8 */
-    --accent-2: #4a86e6; /* #5B88D2 */
+    --color-base: #0C264D;
+    --color-text: #d7ebfb;
+    --color-accent-1: #93baf5; /* #ADC3E8 */
+    --color-accent-2: #4a86e6; /* #5B88D2 */
 
     --bubble-size: 95px;
     --bubble-displace: 14px;
+
+    --accordion-padding: 0px 15px;
+    --accordion-border-radius: 15px;
 }
 
 * {
@@ -29,14 +32,14 @@ img {
 
 h1 {
     font-size: 1.5em;
-    color: var(--accent-1);
+    color: var(--color-accent-1);
 }
 
 h2 {
     margin-top: 0.2em;
     margin-bottom: 0.2em;
     font-size: 1.2em;
-    color: var(--accent-2);
+    color: var(--color-accent-2);
 }
 
 h1, h2 {
@@ -48,23 +51,23 @@ body {
     padding: 0px;
     font-family: "Jaldi", sans-serif;
 	font-size: 18px;
-	color: var(--text);
-	background-color: var(--base);
+	color: var(--color-text);
+	background-color: var(--color-base);
 }
 
 hr {
     margin-top: 2em;
     margin-bottom: 2em;
     border: 0;
-    border-top: 2px solid var(--text);
+    border-top: 2px solid var(--color-text);
 }
 
 a {
-    color: var(--accent-1);
+    color: var(--color-accent-1);
 }
 
 a:hover, a:active {
-    color: var(--accent-2);
+    color: var(--color-accent-2);
 }
 
 .bar {
@@ -77,18 +80,18 @@ a:hover, a:active {
     width: 100%;
     height: calc(var(--bubble-size) - (var(--bubble-displace) * 2));
     padding: 0px 5vw;
-    background-color: var(--accent-2);
+    background-color: var(--color-accent-2);
 }
 
 .bar-link {
-    color: var(--text);
+    color: var(--color-text);
     font-family: "Overpass", sans-serif;
     font-weight: bold;
     text-decoration: none;
 }
 
 .bar-link:hover, .bar-link:active {
-    color: var(--base);
+    color: var(--color-base);
 }
 
 .bubble {
@@ -103,7 +106,7 @@ a:hover, a:active {
 
 .select {
     border-radius: 50%;
-    background: linear-gradient(var(--base) 50%, transparent 50%);
+    background: linear-gradient(var(--color-base) 50%, transparent 50%);
     background-size: 100% 200%;
     background-position: 0% 0%;
 
@@ -129,6 +132,45 @@ a:hover, a:active {
 }
 
 .subtitle {
-    color: var(--accent-1);
+    color: var(--color-accent-1);
     font-size: 0.9em;
+}
+
+.accordion {
+    width: 100%;
+    padding: var(--accordion-padding);
+
+    border: none;
+    outline: none;
+    border-radius: var(--accordion-border-radius);
+    background-color: var(--color-accent-1);
+
+    color: var(--color-base);
+    font-family: inherit;
+    font-size: inherit;
+    text-align: left;
+
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: var(--color-accent-2);
+}
+
+.active {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    color: var(--color-text);
+}
+
+.accordion-body {
+    padding: var(--accordion-padding);
+    border-bottom-left-radius: var(--accordion-border-radius);
+    border-bottom-right-radius: var(--accordion-border-radius);
+    background-color: var(--color-accent-1);
+    color: var(--color-base);
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
