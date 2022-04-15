@@ -149,6 +149,8 @@ a:hover, a:active {
     font-family: inherit;
     font-size: inherit;
     text-align: left;
+    
+    cursor: pointer;
 
     transition: 0.4s;
 }
