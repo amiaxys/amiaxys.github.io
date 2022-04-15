@@ -160,7 +160,6 @@ hr {
     content: "\2b";
     margin-left: 5px;
     font: var(--fa-font-solid);
-    font-size: 1.2em;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     float: right;
