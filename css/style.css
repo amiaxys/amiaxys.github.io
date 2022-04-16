@@ -192,16 +192,17 @@ hr {
 
 .divider {
     display: inline-block;
+    margin: 0 5px;
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background-color: var(--color-accent-2);
 }
 
-.divider:before {
+/*.divider:before {
     content: " ";
 }
 
 .divider:after {
     content: " ";
-}
+}*/
