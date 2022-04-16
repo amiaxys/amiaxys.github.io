@@ -198,11 +198,3 @@ hr {
     border-radius: 50%;
     background-color: var(--color-accent-2);
 }
-
-/*.divider:before {
-    content: " ";
-}
-
-.divider:after {
-    content: " ";
-}*/
