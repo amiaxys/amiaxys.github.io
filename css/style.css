@@ -69,8 +69,8 @@ a:hover, a:active {
 }
 
 iframe {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: min(80vh, 500px);
 }
 
 hr {
