@@ -189,3 +189,11 @@ hr {
     overflow-y: hidden;
     transition: max-height 0.4s ease-out;
 }
+
+.divider {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color-accent-2);
+}
