@@ -70,7 +70,7 @@ a:hover, a:active {
 
 iframe {
     width: 100%;
-    height: min(90vh, 600px);
+    height: min(90vh, 700px);
 }
 
 hr {
