@@ -163,8 +163,8 @@ hr {
 
 .accordion:after {
     content: "\2b";
-    margin-top: 5px;
-    margin-left: 6px;
+    margin-top: 7px;
+    margin-left: 5px;
     font: var(--fa-font-solid);
     font-size: 0.9em;
     text-rendering: auto;
