@@ -1,2 +1,2 @@
 # amiaxys.github.io
-A simple personal website to hold a portfolio + resume
+A simple personal website to hold a portfolio + resume. Not updated.
