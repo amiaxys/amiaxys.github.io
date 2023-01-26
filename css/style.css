@@ -1,200 +1,204 @@
 @font-face {
-	font-family: "Overpass";
-	src: url("https://fonts.googleapis.com/css?family=Overpass");
+  font-family: "Overpass";
+  src: url("https://fonts.googleapis.com/css?family=Overpass");
 }
 
 @font-face {
-	font-family: "Jaldi";
-	src: url("https://fonts.googleapis.com/css?family=Jaldi");
+  font-family: "Jaldi";
+  src: url("https://fonts.googleapis.com/css?family=Jaldi");
 }
 
 :root {
-    --color-base: #0C264D;
-    --color-text: #d7ebfb;
-    --color-accent-1: #93baf5; /* #ADC3E8 */
-    --color-accent-2: #4a86e6; /* #5B88D2 */
+  --color-base: #0c264d;
+  --color-text: #d7ebfb;
+  --color-accent-1: #93baf5; /* #ADC3E8 */
+  --color-accent-2: #4a86e6; /* #5B88D2 */
 
-    --bubble-size: 95px;
-    --bubble-displace: 14px;
+  --bubble-size: 95px;
+  --bubble-displace: 14px;
 
-    --accordion-padding: 0px 15px;
-    --accordion-border-radius: 15px;
+  --accordion-padding: 0px 15px;
+  --accordion-border-radius: 15px;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 h1 {
-    font-size: 1.5em;
-    color: var(--color-accent-1);
+  font-size: 1.5em;
+  color: var(--color-accent-1);
 }
 
 h2 {
-    margin-top: 0.2em;
-    margin-bottom: 0.2em;
-    font-size: 1.2em;
-    color: var(--color-accent-2);
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  font-size: 1.2em;
+  color: var(--color-accent-2);
 }
 
-h1, h2 {
-    font-family: "Overpass", sans-serif;
+h1,
+h2 {
+  font-family: "Overpass", sans-serif;
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
-    font-family: "Jaldi", sans-serif;
-	font-size: 18px;
-	color: var(--color-text);
-	background-color: var(--color-base);
+  margin: 0px;
+  padding: 0px;
+  font-family: "Jaldi", sans-serif;
+  font-size: 18px;
+  color: var(--color-text);
+  background-color: var(--color-base);
 }
 
 pre {
-    margin: 0.5em 0;
-    font-size: 0.8em;
+  margin: 0.5em 0;
+  font-size: 0.8em;
 }
 
 a {
-    color: var(--color-accent-1);
+  color: var(--color-accent-1);
 }
 
-a:hover, a:active {
-    color: var(--color-accent-2);
+a:hover,
+a:active {
+  color: var(--color-accent-2);
 }
 
 iframe {
-    width: 100%;
-    height: min(90vh, 700px);
+  width: 100%;
+  height: min(90vh, 700px);
 }
 
 hr {
-    margin-top: 2em;
-    margin-bottom: 2em;
-    border: 0;
-    border-top: 2px solid var(--color-text);
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border: 0;
+  border-top: 2px solid var(--color-text);
 }
 
 .bar {
-    display: flex;
-    flex-flow: row-reverse nowrap;
-    justify-content: flex-start;
-    align-items: center;
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  justify-content: flex-start;
+  align-items: center;
 
-    margin-top: var(--bubble-displace);
-    width: 100%;
-    height: calc(var(--bubble-size) - (var(--bubble-displace) * 2));
-    padding: 0px 5vw;
-    background-color: var(--color-accent-2);
+  margin-top: var(--bubble-displace);
+  width: 100%;
+  height: calc(var(--bubble-size) - (var(--bubble-displace) * 2));
+  padding: 0px 5vw;
+  background-color: var(--color-accent-2);
 }
 
 .bar-link {
-    color: var(--color-text);
-    font-family: "Overpass", sans-serif;
-    font-weight: bold;
-    text-decoration: none;
+  color: var(--color-text);
+  font-family: "Overpass", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
 }
 
-.bar-link:hover, .bar-link:active {
-    color: var(--color-base);
+.bar-link:hover,
+.bar-link:active {
+  color: var(--color-base);
 }
 
 .bubble {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
 
-    flex: 0 0 var(--bubble-size);
-    height: var(--bubble-size);
+  flex: 0 0 var(--bubble-size);
+  height: var(--bubble-size);
 }
 
 .select {
-    border-radius: 50%;
-    background: linear-gradient(var(--color-base) 50%, transparent 50%);
-    background-size: 100% 200%;
-    background-position: 0% 0%;
+  border-radius: 50%;
+  background: linear-gradient(var(--color-base) 50%, transparent 50%);
+  background-size: 100% 200%;
+  background-position: 0% 0%;
 }
 
 .content {
-    margin: auto;
-    max-width: 900px;
-    padding: 2vw 5vw;
+  margin: auto;
+  max-width: 900px;
+  padding: 2vw 5vw;
 }
 
 .subtitle {
-    color: var(--color-accent-1);
-    font-size: 0.9em;
+  color: var(--color-accent-1);
+  font-size: 0.9em;
 }
 
 .accordion {
-    width: 100%;
-    padding: var(--accordion-padding);
+  width: 100%;
+  padding: var(--accordion-padding);
 
-    border: none;
-    outline: none;
-    border-radius: var(--accordion-border-radius);
-    background-color: var(--color-accent-1);
+  border: none;
+  outline: none;
+  border-radius: var(--accordion-border-radius);
+  background-color: var(--color-accent-1);
 
-    color: var(--color-base);
-    font-family: inherit;
-    font-size: inherit;
-    text-align: left;
-    
-    cursor: pointer;
+  color: var(--color-base);
+  font-family: inherit;
+  font-size: inherit;
+  text-align: left;
 
-    transition: 0.2s;
+  cursor: pointer;
+
+  transition: 0.2s;
 }
 
-.active, .accordion:hover {
-    background-color: var(--color-accent-2);
-    color: var(--color-text);
+.active,
+.accordion:hover {
+  background-color: var(--color-accent-2);
+  color: var(--color-text);
 }
 
 .active {
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 .accordion:after {
-    content: "\2b";
-    margin-top: 7px;
-    margin-left: 5px;
-    font: var(--fa-font-solid);
-    font-size: 0.9em;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    float: right;
+  content: "\2b";
+  margin-top: 7px;
+  margin-left: 5px;
+  font: var(--fa-font-solid);
+  font-size: 0.9em;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  float: right;
 }
-  
+
 .active:after {
-    content: "\f068";
+  content: "\f068";
 }
 
 .accordion-body {
-    width: 100%;
-    padding: var(--accordion-padding);
-    border-bottom-left-radius: var(--accordion-border-radius);
-    border-bottom-right-radius: var(--accordion-border-radius);
-    background-color: var(--color-accent-1);
-    color: var(--color-base);
+  width: 100%;
+  padding: var(--accordion-padding);
+  border-bottom-left-radius: var(--accordion-border-radius);
+  border-bottom-right-radius: var(--accordion-border-radius);
+  background-color: var(--color-accent-1);
+  color: var(--color-base);
 
-    max-height: 0;
-    overflow-x: auto;
-    overflow-y: hidden;
-    transition: max-height 0.4s ease-out;
+  max-height: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  transition: max-height 0.4s ease-out;
 }
 
 .divider {
-    display: inline-block;
-    margin: 0 5px;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: var(--color-accent-2);
+  display: inline-block;
+  margin: 0 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--color-accent-2);
 }
