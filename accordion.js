@@ -1,6 +1,6 @@
 (function () {
   window.addEventListener("DOMContentLoaded", function () {
-    let accordion = document.getElementsByClassName("accordion");
+    let accordion = document.querySelectorAll(".accordion");
 
     for (let i = 0; i < accordion.length; i++) {
       accordion[i].addEventListener("click", function () {
