@@ -1,4 +1,5 @@
 (function () {
+  "use strict";
   window.addEventListener("DOMContentLoaded", function () {
     let accordion = document.querySelectorAll(".accordion");
 
@@ -6,11 +7,11 @@
       accordion[i].addEventListener("click", function () {
         this.classList.toggle("active");
 
-        let body = this.nextElementSibling;
-        if (body.style.maxHeight) {
-          body.style.maxHeight = null;
+        let accordbody = this.nextElementSibling;
+        if (accordbody.style.maxHeight) {
+          accordbody.style.maxHeight = null;
         } else {
-          body.style.maxHeight = body.scrollHeight + "px";
+          accordbody.style.maxHeight = accordbody.scrollHeight + "px";
         }
       });
     }
